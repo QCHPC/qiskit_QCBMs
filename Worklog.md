@@ -1,4 +1,5 @@
-**2025-10-24**
+## 2025-10-24
+
 Based on the work made by the team during the week, together with various explorations and points discussed during the meeting we arrived the following:
  
  To Do's
