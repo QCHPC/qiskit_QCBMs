@@ -10,7 +10,10 @@
  ## Repos
  - <a href="https://github.com/aspuru-guzik-group/quantum-generative-models">aspuru-guzik-group/quantum-generative-models </a>.
  - <a href="https://github.com/GiggleLiu/QuantumCircuitBornMachine">GiggleLiu/QuantumCircuitBornMachine</a>.
-
+ - Example Qiskit Addon Project [Qiskit Addon SQD](https://github.com/Qiskit/qiskit-addon-sqd/tree/main)
+ - [Adaptive-Circuit-Learning-of-Born-Machine, 2311.17798](https://github.com/chuntse0514/Adaptive-Circuit-Learning-of-Born-Machine) 
+ 
+ 
  ## Various useful links
  - <a href="https://pennylane.ai/qml/demos/tutorial_qcbm">Quantum Circuit Born Machines - PennyLane Demos</a>.
 
