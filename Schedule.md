@@ -1,7 +1,8 @@
 ### Calls
 
-Fridays, 9am PT/6pm Madrid/10:30pm IST
+Fridays, 8:30am PT/5:30pm Madrid/10:00pm IST
 
+Fri Nov 14: Natalie unavailable, at least, at the above time
 
 
 ### Breaks
