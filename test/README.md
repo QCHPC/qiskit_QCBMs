@@ -1,4 +1,4 @@
-\# Test environments
+# Test environments
 
 
 
@@ -10,9 +10,9 @@ tox can be installed by running `pip install tox`.
 
 
 
-tox is organized around various "environments," each of which is described below.  To run \_all\_ test environments, run `tox` without any arguments:
+tox is organized around various "environments," each of which is described below.  
 
-
+(In the Future) To run \_all\_ test environments, run `tox` without any arguments:
 
 ```sh
 
