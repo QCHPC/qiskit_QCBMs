@@ -17,6 +17,8 @@
    - Views: of issues, pull requests
    - Visualize: with charts
 
+- [Example Qiskit GitHub Projects](https://github.com/orgs/Qiskit/projects?query=is%3Aopen)
+
 - Trello, similar to GitHub Projects
 
 - Asana
