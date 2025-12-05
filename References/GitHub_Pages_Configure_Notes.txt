@@ -1,0 +1,8 @@
+Configure GitHub Pages:
+Navigate to your repository on GitHub.
+
+Go to Settings > Pages.
+Under the "Source" section, choose the branch you used (e.g., gh-pages or main/master) and the appropriate folder (e.g., /root for gh-pages or /docs for main/master).
+Click Save.
+
+Your Sphinx documentation should now be accessible at your GitHub Pages URL (e.g., https://<username>.github.io/<repository-name>/).
