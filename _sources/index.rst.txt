@@ -1,0 +1,75 @@
+.. Qiskit-QCBMs documentation master file, created by
+   sphinx-quickstart on Thu Dec  4 21:08:00 2025.
+   You can adapt this file completely to your liking, but it should at least
+   contain the root `toctree` directive.
+
+Qiskit-QCBMs documentation
+==========================
+
+Add your content using ``reStructuredText`` syntax. See the
+`reStructuredText <https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html>`_
+documentation for details.
+
+########################################################
+Qiskit addon: Quantum Circuit Born Machine (QCBM)
+########################################################
+
+This package contains what could become a Qiskit addon for creating a Quantum Circuit Born Machine (QCBM)
+
+
+Documentation
+-------------
+
+All documentation is available `here <https://jorgeplazas.github.io/qiskit-addon-sqd/>`_.
+
+Installation
+------------
+
+We encourage installing this package via ``pip``, when possible:
+
+.. code-block:: bash
+
+   pip install .  (from the project root dir, after git cloning the repo to your machine)
+
+
+For more installation information refer to the `installation instructions <install.rst>`_ in the documentation.
+
+Citing this project
+-------------------
+
+If you use this package in your research, please cite it according to ``CITATON.bib`` file included in this repository:
+
+.. literalinclude:: ../CITATION.bib
+   :language: bibtex
+
+License
+-------
+
+`Apache License 2.0 <https://github.com/jorgeplazas/Qiskit-QCBMs/blob/main/LICENSE.txt>`_
+
+.. _references:
+
+References
+----------
+
+[1] J-G. Liu, L. Wang., [Differentiable learning of quantum circuit Born machines](https://doi.org/10.1103/PhysRevA.98.062324), Phys. Rev. A 98, 062324 (2018).
+
+
+.. toctree::
+   :hidden:
+   
+   Documentation Home <self>
+   Tutorials <tutorials/index>
+   GitHub <https://github.com/jorgeplazas/Qiskit-QCBMs>
+
+
+
+
+
+
+
+
+
+
+
+
