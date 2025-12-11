@@ -10,8 +10,6 @@ from qiskit_addon_qcbm.born_machine import QCBM
 def test_QCBM_Creation():
     qcbm = QCBM(num_qubits=4, num_layers=3)
 
-    qcbm.train()
-
-    assert qcbm.qcbm.num_qubits == 4
+    assert qcbm.num_qubits == 4
     assert qcbm.num_layers == 3
    
