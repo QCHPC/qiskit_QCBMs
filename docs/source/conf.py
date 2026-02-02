@@ -29,5 +29,5 @@ exclude_patterns = []
 # html_theme = 'alabaster'
 # html_theme = 'sphinx_rtd_theme'
 
-html_theme = 'qiskit-sphinx-theme'
+html_theme = 'qiskit-ecosystem'
 html_static_path = ['_static']
