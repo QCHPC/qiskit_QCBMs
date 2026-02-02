@@ -20,4 +20,16 @@ sphinx:
 # python:
 #    install:
 #    - requirements: docs/requirements.txt
-        
+
+# Install your local package and any documentation-specific requirements
+python:
+  install:
+    # Install the local package (e.g., if you have a setup.py or pyproject.toml)
+    - method: pip
+      path: .
+      # Optional: specify extra requirements if defined in your project metadata
+      # extra_requirements:
+      #   - docs 
+
+    # Install documentation requirements from a specific file (optional, depends on your project structure)
+    # - requirements: docs/requirements.txt        
