@@ -27,7 +27,7 @@ exclude_patterns = []
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
 # html_theme = 'alabaster'
-# html_theme = 'sphinx_rtd_theme'
+html_theme = 'sphinx_rtd_theme'
+# html_theme = 'qiskit-ecosystem'
 
-html_theme = 'qiskit-ecosystem'
 html_static_path = ['_static']
