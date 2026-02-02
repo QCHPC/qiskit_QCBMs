@@ -91,7 +91,7 @@ docs = [
 [project.urls]
 # "Documentation" = "https://jorgeplazas.github.io/qiskit-addon-qcbm/"
 # "Repository" = "https://github.com/jorgeplazas/qiskit-addon-qcbm"
-"Repository" = https://github.com/QCHPC/qiskit_QCBMs/"
+"Repository" = "https://github.com/QCHPC/qiskit_QCBMs/"
 
 [tool.hatch.build.targets.wheel]
 only-include = [
