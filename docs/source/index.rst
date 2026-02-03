@@ -7,19 +7,21 @@
    `reStructuredText <https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html>`_
    documentation for details.
 
-===================================================
-Qiskit-Like Addon: Quantum Circuit Born Machines
-===================================================
+====================================================
+Quantum Circuit Born Machines 
+====================================================
+--- like a Qiskit Addon
+====================================================
 
 This package implements Quantum Circuit Born Machines.
 
 Source Code
-============
+------------
 
 The source code to this package is available `on GitHub <https://github.com/QCHPC/qiskit_QCBMs>`__.
 
 Contents
-=========
+---------
 
 
 .. toctree::
