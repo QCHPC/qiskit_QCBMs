@@ -88,11 +88,12 @@ html_theme_options = {
     },
     "dark_logo": "_static/images/qiskit-dark-logo.svg",
     "light_logo": "_static/images/qiskit-light-logo.svg",
-    "sidebar_qiskit_ecosystem_member": False,
+    "sidebar_hide_name": True,
+    "sidebar_qiskit_ecosystem_member": True,
 }
 
 html_static_path = ['_static']
-templates_path = ["_templates"]
+templates_path = ['_templates']
 
 html_last_updated_fmt = "%Y/%m/%d"
 html_title = f"{project} {release}"
