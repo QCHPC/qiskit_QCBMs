@@ -82,8 +82,13 @@ html_theme = 'qiskit-ecosystem'
 
 # This allows including custom CSS and HTML templates.
 html_theme_options = {
-    "dark_logo": "images/qiskit-dark-logo.svg",
-    "light_logo": "images/qiskit-light-logo.svg",
+    "logo": {
+#        "dark_logo": "images/qiskit-dark-logo.svg",
+#        "light_logo": "images/qiskit-light-logo.svg",
+#
+        "image_dark":  "_static/images/qiskit-dark-logo.svg",
+        "image_light": "_static/images/qiskit-light-logo.svg",
+    }
     "sidebar_qiskit_ecosystem_member": False,
 }
 
