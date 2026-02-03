@@ -3,32 +3,28 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Qiskit-QCBMs documentation
-==========================
+.. Add your content using ``reStructuredText`` syntax. See the
+   `reStructuredText <https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html>`_
+   documentation for details.
 
-Add your content using ``reStructuredText`` syntax. See the
-`reStructuredText <https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html>`_
-documentation for details.
-
-#######################################
-Qiskit: Quantum Circuit Born Machines
-#######################################
+===================================================
+Qiskit-Like Addon: Quantum Circuit Born Machines
+===================================================
 
 This package implements Quantum Circuit Born Machines.
 
 Source Code
----------------
+============
 
 The source code to this package is available `on GitHub <https://github.com/QCHPC/qiskit_QCBMs>`__.
 
 Contents
---------
+=========
 
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
-
+   
    Documentation Home <self>
    Installation Instructions <install>
    Tutorials <tutorials/index>
