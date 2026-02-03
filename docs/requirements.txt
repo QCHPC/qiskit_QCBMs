@@ -1,0 +1,21 @@
+# This is a comment and is ignored by pip
+# Blank lines are also ignored.
+
+# Specify a package with a minimum version
+# numpy>=1.21.0
+# Specify an exact version (recommended for reproducibility)
+# pandas==1.4.0
+# Specify a compatible release version (e.g., any 2.x version that is >= 2.8.1)
+# requests~=2.8.1
+# Specify a package that can use any version
+# scikit-learn
+# Specify a package from a specific GitHub repository
+# git+https://github.com/psf/requests.git@main#egg=requests
+
+matplotlib
+nbsphinx
+reno
+sphinx
+sphinx-copybutton
+sphinx-reredirects
+qiskit-sphinx-theme

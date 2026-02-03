@@ -32,4 +32,4 @@ python:
       #   - docs 
 
     # Install documentation requirements from a specific file (optional, depends on your project structure)
-    # - requirements: docs/requirements.txt        
+    - requirements: docs/requirements.txt        
