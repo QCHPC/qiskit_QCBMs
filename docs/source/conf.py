@@ -88,7 +88,7 @@ html_theme_options = {
 #
         "image_dark":  "_static/images/qiskit-dark-logo.svg",
         "image_light": "_static/images/qiskit-light-logo.svg",
-    }
+    },
     "sidebar_qiskit_ecosystem_member": False,
 }
 
