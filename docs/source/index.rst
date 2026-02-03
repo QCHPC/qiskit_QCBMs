@@ -10,8 +10,35 @@ Add your content using ``reStructuredText`` syntax. See the
 `reStructuredText <https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html>`_
 documentation for details.
 
+#######################################
+Qiskit: Quantum Circuit Born Machines
+#######################################
+
+This package implements Quantum Circuit Born Machines.
+
+Source Code
+---------------
+
+The source code to this package is available `on GitHub <https://github.com/QCHPC/qiskit_QCBMs>`__.
+
+Contents
+--------
+
 
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
 
+   Documentation Home <self>
+   Installation Instructions <install>
+   Tutorials <tutorials/index>
+   Explanatory Material <explanation/index>
+   How-To Guides <how-tos/index>
+   API References <apidocs/index>
+   GitHub <https://github.com/QCHPC/qiskit_QCBMs>
+   Release Notes <release-notes>
+
+.. Hiding - Indices and tables
+   :ref:`genindex`
+   :ref:`modindex`
+   :ref:`search`
