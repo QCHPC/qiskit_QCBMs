@@ -27,10 +27,10 @@ from importlib.metadata import version as metadata_version
 
 # The following line is required for autodoc to be able to find and import the code whose API should
 # be documented.
-sys.path.insert(0, os.path.abspath('..\..\Code'))
-sys.path.insert(0, os.path.abspath('..\..\qiskit_addon_qcbm')) # Adjust path as needed
+sys.path.insert(0, os.path.abspath('../../Code'))
+sys.path.insert(0, os.path.abspath('../../qiskit_addon_qcbm')) # Adjust path as needed
 
-autoapi_dirs = ['..\..\qiskit_addon_qcbm', '..\..\Code'] # Path relative to the conf.py file's directory
+autoapi_dirs = ['../../qiskit_addon_qcbm', '../../Code'] # Path relative to the conf.py file's directory
 autoapi_type = "python"
 
 
