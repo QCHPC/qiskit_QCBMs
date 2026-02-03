@@ -32,7 +32,6 @@ Contents
    Tutorials <tutorials/index>
    Explanatory Material <explanation/index>
    How-To Guides <how-tos/index>
-..   API References <api-reference>
    GitHub <https://github.com/QCHPC/qiskit_QCBMs>
    Release Notes <release-notes>
 
