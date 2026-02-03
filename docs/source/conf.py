@@ -27,7 +27,7 @@ from importlib.metadata import version as metadata_version
 
 # The following line is required for autodoc to be able to find and import the code whose API should
 # be documented.
-sys.path.insert(0, os.path.abspath(".."))
+sys.path.insert(0, os.path.abspath("..\.."))
 
 
 project = 'Qiskit-QCBMs'
@@ -59,8 +59,6 @@ extensions = [
 #    'sphinx_rtd_theme',  
 ]
 
-templates_path = ['_templates']
-
 # Sphinx should ignore these patterns when building.
 exclude_patterns = [
     "_build",
@@ -72,28 +70,21 @@ exclude_patterns = [
 ]
 
 
-
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
-# html_theme = 'alabaster'
-# html_theme = 'sphinx_rtd_theme'
 html_theme = 'qiskit-ecosystem'
-
-# This allows including custom CSS and HTML templates.
-html_theme_options = {
-#    "logo": {
-#        "image_dark":  "_static/images/qiskit-dark-logo.svg",
-#        "image_light": "_static/images/qiskit-light-logo.svg",
-#    },
-    "dark_logo": "images/qiskit-dark-logo.svg",
-    "light_logo": "images/qiskit-light-logo.svg",
-    "sidebar_hide_name": True,
-    "sidebar_qiskit_ecosystem_member": True,
-}
 
 html_static_path = ['_static']
 templates_path = ['_templates']
+
+# This allows including custom CSS and HTML templates.
+html_theme_options = {
+    "dark_logo": "images/qiskit-dark-logo.svg",
+    "light_logo": "images/qiskit-light-logo.svg",
+    "sidebar_hide_name": False,
+    "sidebar_qiskit_ecosystem_member": False,
+}
 
 html_last_updated_fmt = "%Y/%m/%d"
 html_title = f"{project} {release}"
@@ -137,79 +128,3 @@ intersphinx_mapping = {
 
 plot_working_directory = "."
 plot_html_show_source_link = False
-
-# ----------------------------------------------------------------------------------
-# Source code links
-# ----------------------------------------------------------------------------------
-
-
-def determine_github_branch() -> str:
-    """Determine the GitHub branch name to use for source code links.
-
-    We need to decide whether to use `stable/<version>` vs. `main` for dev builds.
-    Refer to https://docs.github.com/en/actions/learn-github-actions/variables
-    for how we determine this with GitHub Actions.
-    """
-    # If CI env vars not set, default to `main`. This is relevant for local builds.
-    if "GITHUB_REF_NAME" not in os.environ:
-        return "main"
-
-    # PR workflows set the branch they're merging into.
-    if base_ref := os.environ.get("GITHUB_BASE_REF"):
-        return base_ref
-
-    ref_name = os.environ["GITHUB_REF_NAME"]
-
-    # Check if the ref_name is a tag like `1.0.0` or `1.0.0rc1`. If so, we need
-    # to transform it to a Git branch like `stable/1.0`.
-    version_without_patch = re.match(r"(\d+\.\d+)", ref_name)
-    return f"stable/{version_without_patch.group()}" if version_without_patch else ref_name
-
-
-GITHUB_BRANCH = determine_github_branch()
-
-
-def linkcode_resolve(domain, info):
-    if domain != "py":
-        return None
-
-    module_name = info["module"]
-    module = sys.modules.get(module_name)
-    if module is None or "qiskit_addon_qcbm" not in module_name:
-        return None
-
-    def is_valid_code_object(obj):
-        return inspect.isclass(obj) or inspect.ismethod(obj) or inspect.isfunction(obj)
-
-    obj = module
-    for part in info["fullname"].split("."):
-        try:
-            obj = getattr(obj, part)
-        except AttributeError:
-            return None
-        if not is_valid_code_object(obj):
-            return None
-
-    # Unwrap decorators. This requires they used `functools.wrap()`.
-    while hasattr(obj, "__wrapped__"):
-        obj = obj.__wrapped__
-        if not is_valid_code_object(obj):
-            return None
-
-    try:
-        full_file_name = inspect.getsourcefile(obj)
-    except TypeError:
-        return None
-    if full_file_name is None or "/qiskit_addon_qcbm/" not in full_file_name:
-        return None
-    file_name = full_file_name.split("/qiskit_addon_qcbm/")[-1]
-
-    try:
-        source, lineno = inspect.getsourcelines(obj)
-    except (OSError, TypeError):
-        linespec = ""
-    else:
-        ending_lineno = lineno + len(source) - 1
-        linespec = f"#L{lineno}-L{ending_lineno}"
-    return f"https://github.com/Qiskit/qiskit-addon-qcbm/tree/{GITHUB_BRANCH}/qiskit_addon_qcbm/{file_name}{linespec}"
-
