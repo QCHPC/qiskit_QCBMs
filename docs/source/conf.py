@@ -27,7 +27,11 @@ from importlib.metadata import version as metadata_version
 
 # The following line is required for autodoc to be able to find and import the code whose API should
 # be documented.
-sys.path.insert(0, os.path.abspath("..\.."))
+sys.path.insert(0, os.path.abspath('..\..\Code'))
+sys.path.insert(0, os.path.abspath('..\..\qiskit_addon_qcbm')) # Adjust path as needed
+
+autoapi_dirs = ['..\..\qiskit_addon_qcbm', '..\..\Code'] # Path relative to the conf.py file's directory
+autoapi_type = "python"
 
 
 project = 'Qiskit-QCBMs'
@@ -45,8 +49,9 @@ language = 'en'
 
 extensions = [
     "matplotlib.sphinxext.plot_directive",
-    "nbsphinx",
+    "nbsphinx", 
     "reno.sphinxext",
+    "autoapi.extension",
     "sphinx.ext.napoleon",
     "sphinx.ext.autodoc",
     "sphinx.ext.autosummary",

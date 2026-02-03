@@ -16,6 +16,7 @@ matplotlib
 nbsphinx
 reno
 sphinx
+sphinx-autoapi
 sphinx-copybutton
 sphinx-reredirects
 qiskit-sphinx-theme
