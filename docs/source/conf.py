@@ -51,12 +51,11 @@ extensions = [
     "sphinx.ext.autodoc",
     "sphinx.ext.autosummary",
     "sphinx.ext.mathjax",
-    "sphinx.ext.linkcode",
+#    "sphinx.ext.linkcode",
     "sphinx.ext.intersphinx",  
     "sphinx_copybutton",
     "sphinx_reredirects",    
-    'qiskit_sphinx_theme',
-#    'sphinx_rtd_theme',  
+    'qiskit_sphinx_theme', 
 ]
 
 # Sphinx should ignore these patterns when building.
