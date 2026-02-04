@@ -1,0 +1,9 @@
+.ipynb_checkpoints
+__pycache__
+
+# Sphinx documentation
+docs/build/
+
+# Unit test / linting
+.tox/
+
