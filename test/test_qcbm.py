@@ -1,8 +1,6 @@
 # This code is a QAMP project based on Qiskit.
 """Tests for the QCBM submodule."""
 
-import pytest
-
 from qiskit_addon_qcbm.born_machine import QCBM
 
 
@@ -12,4 +10,3 @@ def test_QCBM_Creation():
 
     assert qcbm.num_qubits == 4
     assert qcbm.num_layers == 3
-   
