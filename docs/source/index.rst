@@ -29,7 +29,7 @@ Contents
    
    Documentation Home <self>
    Installation Instructions <install>
-   Tutorials <tutorials/index>
+   Tutorials <../tutorials/index>
    Explanatory Material <explanation/index>
    How-To Guides <how-tos/index>
    GitHub <https://github.com/QCHPC/qiskit_QCBMs>
