@@ -33,6 +33,8 @@ sys.path.insert(0, os.path.abspath('../../qiskit_addon_qcbm')) # Adjust path as 
 autoapi_dirs = ['../../qiskit_addon_qcbm', '../../Code'] # Path relative to the conf.py file's directory
 autoapi_type = "python"
 
+# autoapi_generate_api_docs = True # True is the default value
+autoapi_add_toctree_entry = False
 
 project = 'Qiskit-QCBMs'
 copyright = '2026, QCHPC: N. Hawkins, J. Plazas, D. Choudhury'
@@ -54,6 +56,7 @@ extensions = [
     "autoapi.extension",
     "sphinx.ext.napoleon",
     "sphinx.ext.autodoc",
+    "sphinx.ext.coverage",
     "sphinx.ext.autosummary",
     "sphinx.ext.mathjax",
 #    "sphinx.ext.linkcode",
@@ -109,7 +112,7 @@ autodoc_default_options = {
     "show-inheritance": True,
 }
 napoleon_google_docstring = True
-napoleon_numpy_docstring = False
+napoleon_numpy_docstring = True
 
 # This adds numbers to the captions for figures, tables,
 # and code blocks.
