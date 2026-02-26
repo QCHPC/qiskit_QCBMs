@@ -28,8 +28,8 @@ Contents
    :maxdepth: 2
    
    Documentation Home <self>
-   Tutorials <../tutorials/index>
-   API References <api-reference>
+   Tutorials <tutorials>
+   API References <modules>
    GitHub <https://github.com/QCHPC/qiskit_QCBMs>
 
 .. Hiding - Indices and tables
