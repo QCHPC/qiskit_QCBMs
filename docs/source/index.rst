@@ -28,12 +28,8 @@ Contents
    :maxdepth: 2
    
    Documentation Home <self>
-   Installation Instructions <install>
    Tutorials <../tutorials/index>
-   Explanatory Material <explanation/index>
-   How-To Guides <how-tos/index>
    GitHub <https://github.com/QCHPC/qiskit_QCBMs>
-   Release Notes <release-notes>
 
 .. Hiding - Indices and tables
    :ref:`genindex`
