@@ -29,7 +29,7 @@ Contents
    
    Documentation Home <self>
    Tutorials <tutorials>
-   API References <modules>
+   API References <qiskit_addon_qcbm>
    GitHub <https://github.com/QCHPC/qiskit_QCBMs>
 
 .. Hiding - Indices and tables
