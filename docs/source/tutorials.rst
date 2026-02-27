@@ -1,4 +1,4 @@
 Tutorials
 ================
 
-.. include:: ..\tutorials\index.rst
+.. include:: ../tutorials/index.rst
