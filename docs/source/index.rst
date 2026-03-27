@@ -28,7 +28,7 @@ Contents
    :maxdepth: 2
    
    Documentation Home <self>
-   Tutorials <tutorials>
+   Tutorials <tutorials/index>
    API References <qiskit_addon_qcbm>
    GitHub <https://github.com/QCHPC/qiskit_QCBMs>
 
